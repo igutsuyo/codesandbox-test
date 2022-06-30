@@ -180,7 +180,12 @@ if (flag1 && flag2) {
   console.log("1と2はtrueになります");
 }
 
-const num = 100;
-
+// || は左側がfalseなら右側を返す
+const num = null;
 const fee = num || "金額未設定です";
 console.log(fee);
+
+// ＆＆は左側がtrueなら右側を返す
+const num4 = null;
+const fee2 = num4 && "なんか設定されました";
+console.log(fee2);
